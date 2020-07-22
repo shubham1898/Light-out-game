@@ -3,6 +3,14 @@
     grid-template-rows: 3fr 15fr 2fr;
     margin-top: 20vh;
 }
+@media screen and (max-width: 600px) {
+    .container{
+
+
+          display: block;
+            margin-top: 20vh;
+    }
+  }
 
 .yes{
     display: block;
