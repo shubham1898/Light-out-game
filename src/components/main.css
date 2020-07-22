@@ -3,3 +3,12 @@
     grid-template-rows: 3fr 15fr 2fr;
     margin-top: 20vh;
 }
+
+.yes{
+    display: block;
+}
+
+.no{
+    display:none;
+
+}

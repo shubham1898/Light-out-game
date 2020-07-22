@@ -85,6 +85,13 @@ toggleAdjacent=(r,c)=>{
 
 
 }
+toggleClass=(res)=>{
+    if(res==='yes')
+    return true
+    else return false
+
+}
+
 classColor=(val)=>{
     if(val===0)
     return Style1.red
@@ -93,11 +100,14 @@ classColor=(val)=>{
 
     render() {
 
-        if(this.state.won==='yes')
-        return (<div className={ `${Style1.main}`}><h1>You Won !</h1>
-        <h2>Your Score {this.state.score}</h2>
-        <button  className={`${Style1.button}`} onClick={this.updateRender}>Play Again!!!!</button></div>);
-        else
+        // setTimeout(()=> 
+        //    { if(this.state.won==='yes')
+        // return (<div className={ `${Style1.main}`}><h1>You Won !</h1>
+        // <h2>Your Score {this.state.score}</h2>
+        // <button  className={`${Style1.button}`} onClick={this.updateRender}>Play Again!!!!</button></div>);
+        //    }, 6);
+        
+       
         return (
             
            <div className={` ${Style1.main}`}>
@@ -111,13 +121,20 @@ classColor=(val)=>{
                         ))
                         
                }
-            {/* <GameResult arr={this.state.board}/> */}
-            <div>
+            {/* <GameResult arr={this.state.board} res={this.state.won} score={this.state.score}/> */}
+            <div hidden={this.toggleClass(this.state.won)}>
             <div>Status : Did You Won : {this.state.won}</div>
             <div>Steps Score : <span className={Style1.bold}>{this.state.score}</span></div>
             <div>keep Score as low as possible</div>
             </div>
+            <div className={this.state.won} >
+               <div ><h1>You Won !</h1>
+                <h2>Your Score {this.state.score}</h2>
+                <button  className={`${Style1.button}`} onClick={this.updateRender}>Play Again!!!!</button></div>
+            </div>
+
             </div>
         );
     }
 }
+// className={ `${Style1.main}`}
