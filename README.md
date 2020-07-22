@@ -4,10 +4,14 @@ Lights Out is an electronic game released by Tiger Electronics in 1995. The game
 This is a react base replica of this Light Out game
 
 # How to play
++ On Local Computer
 1. Git clone this repository in your folder
 2. cd Light-out-game
 3. npm install
 4. npm start
+
++ Online
+  Click https://light-out-game.herokuapp.com/
 
 # Rules
 + Aim is to make whole grid red
