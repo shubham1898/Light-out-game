@@ -11,7 +11,7 @@ This is a react base replica of this Light Out game
 4. npm start
 
 + Online
-  Click https://light-out-game.herokuapp.com/
+  Click https://light-out-game-0sz1.onrender.com/
 
 # Rules
 + Aim is to make whole grid red
